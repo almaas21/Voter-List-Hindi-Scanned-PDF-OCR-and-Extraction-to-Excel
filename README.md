@@ -3,6 +3,8 @@ I have used pdf downloaded from the official government voter electoral roll htt
 Replace pdf_file_path = 'Voter List.pdf' # change file name to what you want to replace with.
 
 I used https://www.i2pdf.com/enhance-scanned-pdf to enhance the PDFs as they aren't of very high resolution. Use 300 dpi in settings and reduce saturation appropriately. Pages with Deleted as a watermark won't render correct OCR.
+
 This Python code uses Tesseract OCR so that must be installed before using this. The output is an Excel file with columns: {Name, Father/Husband Name, House Number, Age, and Gender} along with images extracted from the pdf.
+
 Some minor manual data cleaning/ manipulation will be needed in most cases. OCR is unable to extract correctly EPIC Numbers or Voter ID card numbers so that is not included.
 If anyone is capable of tuning Tesseract Settings to use with language "hin+eng" and create a fork out of this he is most welcome.
